@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+}
+
+:root {
+/* Cards background colors */
+    --red: #ff6f69;
+    --orange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+/* Paragraphs color */
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+/* background, headings, buttons colors */
+    --verylightgray: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width:675px) {
+  .main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height:100%;
+  }
+}
+@media screen and (max-width:675px) {
+    .container {
+       flex-direction: column;
+       display: flex;
+       justify-content: center;
+       overflow-y: scroll;
+       border: 1px solid transparent;
+       border-radius: 10px;
+   }
+}
+
+.card {
+    width: 250px;
+    padding-left: 22px;
+    flex-direction: column;
+    display: flex;
+    height: 450px;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card1 {
+    background-color: var(--orange);
+}
+
+.card2 {
+    background-color: var(--darkcyan);
+}
+
+.card3 {
+    background-color: var(--verydarkcyan);
+}
+
+.maintitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--transparentwhite);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.description {
+    font-size: 15px;
+    color: var(--transparentwhite);
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 200px;
+}
+
+.buttoncontainer {
+    border: 1px solid transparent;
+    background-color: var(--verylightgray);
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.buttontext {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+}
+
+.buttontext1 {
+    color: var(--orange);
+}
+
+.buttontext2 {
+    color: var(--darkcyan);
+}
+
+.buttontext3 {
+    color: var(--verydarkcyan);
+}
+
+.icon_img {
+    width: 50px;
+    height: 30px;
+}
